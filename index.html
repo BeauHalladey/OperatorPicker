@@ -3,17 +3,174 @@
 <Title>Operator Picker</title>
 <script src='opPicker.js'></script>
 </head>
-<body>
-<fieldset><legend>Operator Picker</legend>
-	<table>
+<body background="images/rainbowsixsiege1.jpg">
+<fieldset id="selFS"><legend>Select Operators</legend>
+	<table id="opTbl">
+		<thead>
 		<tr>
-			<td>operator:</td>
-			<td id='opSel'></td>
+			<th>Defenders:</th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th width="75px"></th>
+			<th>Attackers:</th>
+			<th></th>
 		</tr>
+		</thead>
+		<tr>
+			<td><img src="images/maestro.png"/></td>
+			<td>Maestro</td>
+			<td><input type="checkbox" id="maestro"/></td>
+			<td><img src="images/alibi.png"/></td>
+			<td>Alibi</td>
+			<td><input type="checkbox" id="ailbi"/></td>
+			<td><img src="images/lion.png"/></td>
+			<td>Lion</td>
+			<td><input type="checkbox" id="lion"/></td>
+			<td><img src="images/finka.png"/></td>
+			<td>Finka</td>
+			<td><input type="checkbox" id="finka"/></td>
+		</tr>
+		<tr>
+			<td><img src="images/vigil.png"/></td>
+            <td>Vigil</td>
+			<td><input type="checkbox" id="vigil"/></td>
+			<td><img src="images/ela.png"/></td>
+			<td>Ela</td>
+			<td><input type="checkbox" id="ela"/></td>
+			<td><img src="images/dokkaebi.png"/></td>
+			<td>Dokkaebi</td>
+			<td><input type="checkbox" id="dok"/></td>
+			<td><img src="images/zofia.png"/></td>
+			<td>Zofia</td>
+			<td><input type="checkbox" id="zofia"/></td>
+		</tr>
+		<tr>
+			<td><img src="images/lesion.png"/></td>
+			<td>Lesion</td>
+			<td><input type="checkbox" id="lesion"/></td>
+			<td><img src="images/mira.png"/></td>
+			<td>Mira</td>
+			<td><input type="checkbox" id="mira"/></td>
+			<td><img src="images/ying.png"/></td>
+			<td>Ying</td>
+			<td><input type="checkbox" id="ying"/></td>
+			<td><img src="images/jackal.png"/></td>
+			<td>Jackal</td>
+			<td><input type="checkbox" id="jackal"/></td>
+		</tr>
+		<tr>
+			<td><img src="images/echo.png"/></td>
+			<td>Echo</td>
+			<td><input type="checkbox" id="echo"/></td>
+			<td><img src="images/caveira.png"/></td>
+			<td>Caveira</td>
+			<td><input type="checkbox" id="cav"/></td>
+			<td><img src="images/hibana.png"/></td>
+			<td>Hibana</td>
+			<td><input type="checkbox" id="hibana"/></td>
+			<td><img src="images/capitao.png"/></td>
+			<td>Capit&atildeo</td>
+			<td><input type="checkbox" id="capitao"/></td>
+		</tr>
+		<tr>
+			<td><img src="images/valkyrie.png"/></td>
+			<td>Valkyrie</td>
+			<td><input type="checkbox" id="valk"/></td>
+			<td><img src="images/frost.png"/></td>
+			<td>Frost</td>
+			<td><input type="checkbox" id="frost"/></td>
+			<td><img src="images/blackbeard.png"/></td>
+			<td>Blackbeard</td>
+			<td><input type="checkbox" id="bbeard"/></td>
+			<td><img src="images/buck.png"/></td>
+			<td>Buck</td>
+			<td><input type="checkbox" id="buck"/></td>
+		</tr>
+		<tr>
+			<td><img src="images/mute.png"/></td>
+			<td>Mute</td>
+			<td><input type="checkbox" id="mute"/></td>
+			<td><img src="images/smoke.png"/></td>
+			<td>Smoke</td>
+			<td><input type="checkbox" id="smoke"/></td>
+			<td><img src="images/sledge.png"/></td>
+			<td>Sledge</td>
+			<td><input type="checkbox" id="sledge"/></td>
+			<td><img src="images/thatcher.png"/></td>
+			<td>Thatcher</td>
+			<td><input type="checkbox" id="thatcher"/></td>
+		</tr>
+		<tr>
+			<td><img src="images/castle.png"/></td>
+			<td>Castle</td>
+			<td><input type="checkbox" id="castle"/></td>
+			<td><img src="images/pulse.png"/></td>
+			<td>Pulse</td>
+			<td><input type="checkbox" id="pulse"/></td>
+			<td><img src="images/ash.png"/></td>
+			<td>Ash</td>
+			<td><input type="checkbox" id="ash"/></td>
+			<td><img src="images/thermite.png"/></td>
+			<td>Thermite</td>
+			<td><input type="checkbox" id="therm"/></td>
+		</tr>
+		<tr>
+			<td><img src="images/doc.png"/></td>
+			<td>Doc</td>
+			<td><input type="checkbox" id="doc"/></td>
+			<td><img src="images/rook.png"/></td>
+			<td>Rook</td>
+			<td><input type="checkbox" id="rook"/></td>
+			<td><img src="images/montagne.png"/></td>
+			<td>Montagne</td>
+			<td><input type="checkbox" id="monty"/></td>
+			<td><img src="images/twitch.png"/></td>
+			<td>Twitch</td>
+			<td><input type="checkbox" id="twitch"/></td>
+		</tr>
+		<tr>
+			<td><img src="images/jager.png"/></td>
+			<td>J&aumlger</td>
+			<td><input type="checkbox" id="jager"/></td>
+			<td><img src="images/bandit.png"/></td>
+			<td>Bandit</td>
+			<td><input type="checkbox" id="bandit"/></td>
+			<td><img src="images/blitz.png"/></td>
+			<td>Blitz</td>
+			<td><input type="checkbox" id="blitz"/></td>
+			<td><img src="images/iq.png"/></td>
+			<td>IQ</td>
+			<td><input type="checkbox" id="iq"/></td>
+		</tr>
+		<tr>
+			<td><img src="images/tachanka.png"/></td>
+			<td>Tachanka</td>
+			<td><input type="checkbox" id="lord"/></td>
+			<td><img src="images/kapkan.png"/></td>
+			<td>Kapkan</td>
+			<td><input type="checkbox" id="kapkan"/></td>
+			<td><img src="images/fuze.png"/></td>
+			<td>Fuze</td>
+			<td><input type="checkbox" id="fuze"/></td>
+			<td><img src="images/glaz.png"/></td>
+			<td>Glaz</td>
+			<td><input type="checkbox" id="glaz"/></td>
+		</tr>
+	</table>
+</fieldset>
+<fieldset id="rollFS"><legend>Roll</legend>
+	<table id="rollTbl">
 		<tr>
 			<td><input type='button' id='defRollBtn' value='Roll for Defender' onclick='opPickerDef()'></td>
 			<td><input type='button' id='atkRollBtn' value='Roll for Attacker' onclick='opPickerAtk()'></td>
 		</tr>
+		<tr>
+			<td>operator:</td>
+			<td id='opSel'></td>
+		</tr>
+	</table>
 </fieldset>
 </body>
 </html>
