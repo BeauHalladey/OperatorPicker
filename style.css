@@ -1,0 +1,22 @@
+legend
+{
+	font-size:20px;
+	color:Yellow;
+}
+th
+{
+	font-size:30px;
+	text-decoration:underline;
+	color:Yellow;
+}
+td
+{
+	font-size:25px;
+	font-weight:bold;
+	color:Yellow;
+}
+#defRollBtn, #atkRollBtn
+{
+	text-decoration:bold;
+	font-size:20;
+}

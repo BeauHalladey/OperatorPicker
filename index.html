@@ -1,11 +1,12 @@
 <html>
 <head>
-<Title>Operator Picker</title>
-<script src='opPicker.js'></script>
+	<Title>Operator Picker</title>
+	<link rel="stylesheet" href="style.css">
+	<script src='opPicker.js'></script>
 </head>
-<body background="images/rainbowsixsiege1.jpg">
+<body background="images/bg.jpg">
 <fieldset id="selFS"><legend>Select Operators</legend>
-	<table id="opTbl">
+	<table id="opTbl" align="center">
 		<thead>
 		<tr>
 			<th>Defenders:</th>
@@ -161,13 +162,13 @@
 	</table>
 </fieldset>
 <fieldset id="rollFS"><legend>Roll</legend>
-	<table id="rollTbl">
+	<table id="rollTbl" align="center">
 		<tr>
 			<td><input type='button' id='defRollBtn' value='Roll for Defender' onclick='opPickerDef()'></td>
 			<td><input type='button' id='atkRollBtn' value='Roll for Attacker' onclick='opPickerAtk()'></td>
 		</tr>
 		<tr>
-			<td>operator:</td>
+			<th>operator:</th>
 			<td id='opSel'></td>
 		</tr>
 	</table>
