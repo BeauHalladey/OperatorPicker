@@ -7,7 +7,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body background="images/bg.jpg">
-<fieldset id="selFS"><legend>Select Operators</legend>
 	<table id="opTbl" align="center">
 		<thead>
 		<tr>
@@ -163,23 +162,11 @@
 		</tr>
 	</table>
 	<div id="btnDiv">
+		<p id='opSel'>Roll for Operator</p>
 		<span><input type='button' id='defRollBtn' value='Roll for Defender' onclick='opPickerDef()'></span>
 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 		<span><input type='button' id='atkRollBtn' value='Roll for Attacker' onclick='opPickerAtk()'></span>
+		
 	</div>
-</fieldset>
-<fieldset id="rollFS"><legend>Roll</legend>
-	<table id="rollTbl" align="center">
-		<tr>
-			<td id="opSelHead">operator:</td>
-			<td id='opSel'></td>
-		</tr>
-		<tr>
-			
-			<td></td>
-			<td></td>
-		</tr>
-	</table>
-</fieldset>
 </body>
 </html>

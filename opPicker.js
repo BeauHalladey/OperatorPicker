@@ -234,6 +234,8 @@ function opPickerAtk()
 	
 	var pickFromArrayAtk = opArrayAtk[Math.floor(Math.random()*opArrayAtk.length)];
 	opSel.innerHTML = pickFromArrayAtk;
+	
+	opArrayAtk.shuffle();
 
 }
 

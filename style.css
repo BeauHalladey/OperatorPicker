@@ -9,7 +9,7 @@ th
 	text-decoration:underline;
 	color:Yellow;
 }
-td
+td, p
 {
 	font-size:25px;
 	font-weight:bold;
