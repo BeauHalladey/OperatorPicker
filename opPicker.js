@@ -1,6 +1,16 @@
+//Select all Defense
+function toggleDef(source)
+{
+	opDefCB = document.getElementsByClassName('opDefCB');
+	for(var i=0, n=opDefCB.length;i<n;i++) {
+    opDefCB[i].checked = source.checked;
+  }
+}
+
 //Defender Picker
 function opPickerDef()
 {
+	var selAllDefCB = document.getElementById('selAllDef');
 	var maestroCB = document.getElementById('maestro');
 	var alibiCB = document.getElementById('alibi');
 	var vigilCB = document.getElementById('vigil');
@@ -25,7 +35,7 @@ function opPickerDef()
 	var opArrayDef = new Array;
 	var opDefCB = document.getElementsByClassName('opDefCB');
 	var opSel = document.getElementById('opSel');
-
+	
 
 	if(maestroCB.checked == true)
 	{
@@ -114,13 +124,21 @@ function opPickerDef()
 	
 	var pickFromArrayDef = opArrayDef[Math.floor(Math.random()*opArrayDef.length)];
 	opSel.innerHTML = pickFromArrayDef;
-
 }
 
+//Select all Attack
+function toggleAtk(source)
+{
+	opAtkCB = document.getElementsByClassName('opAtkCB');
+	for(var i=0, n=opAtkCB.length;i<n;i++) {
+    opAtkCB[i].checked = source.checked;
+  }
+}
 
 //Attacker Picker
 function opPickerAtk()
 {
+	var selAllAtkCB = document.getElementById('selAllAtk');
 	var lionCB = document.getElementById('lion');
 	var finkaCB = document.getElementById('finka');
 	var dokkCB = document.getElementById('dokk');
@@ -145,7 +163,6 @@ function opPickerAtk()
 	var opArrayAtk = new Array;
 	var opAtkCB = document.getElementsByClassName('opAtkCB');
 	var opSel = document.getElementById('opSel');
-
 
 	if(lionCB.checked == true)
 	{
@@ -234,8 +251,5 @@ function opPickerAtk()
 	
 	var pickFromArrayAtk = opArrayAtk[Math.floor(Math.random()*opArrayAtk.length)];
 	opSel.innerHTML = pickFromArrayAtk;
-	
-	opArrayAtk.shuffle();
-
 }
 
