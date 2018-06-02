@@ -29,7 +29,7 @@ function opPickerDef()
 
 	if(maestroCB.checked == true)
 	{
-		opArrayDef.push("maestro");
+		opArrayDef.push("Maestro");
 	}
 	if(alibiCB.checked == true)
 	{
@@ -107,9 +107,9 @@ function opPickerDef()
 	{
 		opArrayDef.push("Tachanka");
 	}
-	else
+	if(opArrayDef.length == 0)
 	{
-		opArrayDef.push("Roll Again");
+		opArrayDef.push("None Selected");
 	}
 	
 	var pickFromArrayDef = opArrayDef[Math.floor(Math.random()*opArrayDef.length)];
@@ -227,9 +227,9 @@ function opPickerAtk()
 	{
 		opArrayAtk.push("Glaz");
 	}
-	else
+	if(opArrayAtk.length == 0)
 	{
-		opArrayAtk.push("Roll Again");
+		opArrayAtk.push("None Selected");
 	}
 	
 	var pickFromArrayAtk = opArrayAtk[Math.floor(Math.random()*opArrayAtk.length)];

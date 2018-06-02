@@ -162,16 +162,22 @@
 			<td><input class="opAtkCB" type="checkbox" id="glaz"/></td>
 		</tr>
 	</table>
+	<div id="btnDiv">
+		<span><input type='button' id='defRollBtn' value='Roll for Defender' onclick='opPickerDef()'></span>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<span><input type='button' id='atkRollBtn' value='Roll for Attacker' onclick='opPickerAtk()'></span>
+	</div>
 </fieldset>
 <fieldset id="rollFS"><legend>Roll</legend>
 	<table id="rollTbl" align="center">
 		<tr>
-			<td><input type='button' id='defRollBtn' value='Roll for Defender' onclick='opPickerDef()'></td>
-			<td><input type='button' id='atkRollBtn' value='Roll for Attacker' onclick='opPickerAtk()'></td>
+			<td id="opSelHead">operator:</td>
+			<td id='opSel'></td>
 		</tr>
 		<tr>
-			<th>operator:</th>
-			<td id='opSel'></td>
+			
+			<td></td>
+			<td></td>
 		</tr>
 	</table>
 </fieldset>
