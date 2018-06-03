@@ -1,18 +1,15 @@
-legend
-{
-	font-size:20px;
-	color:Yellow;
-}
 th
 {
 	font-size:30px;
 	text-decoration:underline;
+	text-shadow: 2px 2px #000000;
 	color:Yellow;
 }
 td, p
 {
 	font-size:25px;
 	font-weight:bold;
+	text-shadow: 2px 2px #000000;
 	color:Yellow;
 }
 #defRollBtn, #atkRollBtn
@@ -23,10 +20,12 @@ td, p
 #opSel
 {
 	font-size:30px;
+	text-shadow: 2px 2px #000000;
 }
 #opSelHead
 {
 	font-size:20px;
+	text-shadow: 2px 2px #000000;
 }
 #btnDiv
 {
